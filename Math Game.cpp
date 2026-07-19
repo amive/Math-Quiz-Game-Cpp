@@ -316,7 +316,7 @@ void printStats(stQuiz q) {
 	}
 	cout << "\n\n" << tabs(3) << " Correct Answers    : " << q.numOfCorrectAnswers << "\n";
 	cout << "\n\n" << tabs(3) << " Wrong Answers      : " << q.numOfWrongAnswers << "\n";
-	cout << "\n" << tabs(3) << "________________________________\n";
+	cout << "\n" << tabs(3) << "_______________________________\n";
 
 }
 
@@ -366,7 +366,7 @@ void traceGame() {
 		for (int i = 1; i <= q.numOfQuestion;i++) {
 
 			generateQuestion(q, qInfo);
-			cout << "\n" << tabs(3) << "________________________________\n";
+			cout << "\n" << tabs(3) << "_______________________________\n";
 			cout << "\n" << tabs(4) << "Question [" << i << "/" << q.numOfQuestion << "]\n";
 			cout << "\n" << tabs(3) << qInfo.question << " = ";
 
