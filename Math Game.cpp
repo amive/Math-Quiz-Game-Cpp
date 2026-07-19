@@ -357,7 +357,6 @@ bool repeatProgram() {
 void traceGame() {
 	stQuiz q;
 	stQuestionInfo qInfo;
-	do {
 		reset(q);
 		readNumOfQuestions(q);
 		readOpLvl(q);
@@ -380,11 +379,13 @@ void traceGame() {
 		}
 		printFinalResult(q);
 		printStats(q);
-	} while (repeatProgram());
+
 }
 
 void startGame() {
-	traceGame();
+	do {
+		traceGame();
+	} while (repeatProgram());
 }
 
 int main()
