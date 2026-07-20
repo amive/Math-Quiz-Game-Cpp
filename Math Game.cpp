@@ -245,7 +245,7 @@ void printAnswerResult(stQuestionInfo qInfo) {
 	if (answerResult(qInfo) == enAnswerResult::correct) {
 		cout << "Correct!";
 	}
-	else cout << "Wrong.";
+	else cout << "Wrong.\n" << tabs(3) << "Correct Answer: " << qInfo.answer;
 }
 
 stQuiz trackAnswers(stQuestionInfo qInfo, stQuiz& q) {
